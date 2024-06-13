@@ -2,13 +2,13 @@ import React from "react";
 
 const ToDoList = () =>{
     return (
-        <form>
+        <form className="form">
             <div class="mb-3">
-                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                 <input type="text" class="form-control" placeholder= "Añade tu tarea aca"/>
-                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                 <label for="exampleInputEmail1" className="form-label"></label>
+                 <input type="text" className="form-control" placeholder= "Añade tu tarea aca"/>
+                 <div id="emailHelp" className="form-text">Please add all the task you need to do.</div>
              </div>
-             <button type="submit" class="btn btn-primary">Add To The List</button>
+             <button type="submit" className="btn btn-primary"><i className="fa fa-solid fa-plus"></i></button>
         </form>
     )
 }
