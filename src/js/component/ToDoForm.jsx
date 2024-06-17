@@ -5,9 +5,9 @@ const ToDoForm = ({ addTodo }) => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        if (value.trim()) { // Asegúrate de que el valor no esté vacío
+        if (value.trim()) { 
             addTodo(value);
-            setValue(""); // Limpiar el campo de entrada después de agregar la tarea
+            setValue(""); 
         }
     };
 
