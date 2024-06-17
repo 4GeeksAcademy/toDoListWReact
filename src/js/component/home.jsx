@@ -8,7 +8,7 @@ import ToDoWrapper from "./ToDoWrapper"
 //create your first component
 const Home = () => {
 	return (
-		<div className="List">
+		<div>
 			<ToDoWrapper/>
 		</div>
 	);

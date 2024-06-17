@@ -20,7 +20,8 @@ const ToDoWrapper = () => {
             <div className="principalContainer">
                 <ToDoForm addTodo={addTodo} />
                 <div className="todo-list">
-                    {todos.map(todo => (
+                    {todos.length === 0 ? (<p>there's no task, add some tasks.</p>) : (
+                    todos.map(todo => (
                         <div key={todo.id} className="todo-item">
                             <span>{todo.task}</span>
                             <div className="btn-container">
@@ -29,7 +30,11 @@ const ToDoWrapper = () => {
                             </button>
                             </div>
                         </div>
-                    ))}
+                    ))
+                )}
+                </div>
+                <div style={{color: "white"}}>
+                    { todos.length } task
                 </div>
             </div>
         </div>

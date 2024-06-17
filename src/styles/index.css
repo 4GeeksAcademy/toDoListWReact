@@ -13,7 +13,7 @@
 
 body{
     margin: 0;
-    height: 100%;
+    height: max-content;
     background: url("https://www.whoa.in/download/best-desktop-wallpaper-backgrounds-photos---desktop-1080p-2k-4k-5k-hd-wallpapers-free-download");
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,7 +21,7 @@ body{
 
 .principalContainer{
     width: 500px;
-    height: 500px;
+    height: max-content;
     border-radius: 20px;
     padding-left: 104px;
     backdrop-filter: blur(30px);
@@ -43,6 +43,15 @@ body{
     margin-top: 1px;
     margin-left: 5px;
 }
+
+.btn-container{
+    visibility: hidden;
+}
+
+.todo-item:hover > .btn-container{
+    visibility: visible;
+}
+
 .form-text{
     color: rgb(216, 216, 216);
 }

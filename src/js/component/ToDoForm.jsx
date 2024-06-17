@@ -21,10 +21,11 @@ const ToDoForm = ({ addTodo }) => {
                     value={value}
                     onChange={e => setValue(e.target.value)}
                 />
-                <div className="form-text"><strong>Even you can delete tasks if you need it.</strong></div>
+                <div className="form-text"><strong>You can delete tasks when its already done.</strong></div>
             </div>
             <button type="submit" className="btn btn-primary"><i className="fa fa-solid fa-plus"></i></button>
         </form>
+        
     );
 };
 
