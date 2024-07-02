@@ -4,16 +4,19 @@ import { v4 as uuidv4 } from 'uuid';
 
 const ToDoWrapper = () => {
     const [todos, setTodos] = useState([]);
+    
 
     const addTodo = todo => {
-        setTodos([...todos, { id: uuidv4(), task: todo, completed: false, isEditing: false }]);
+        setTodos(prevTodos => [
+            ...prevTodos, 
+            { id: uuidv4(), task: todo, completed: false, isEditing: false }
+        ]);
         console.log(todos);
     };
 
     const deleteTodo = id => {
-        setTodos(todos.filter(todo => todo.id !== id));
+        setTodos(prevTodos => prevTodos.filter(todo => todo.id !== id));
     };
-
     return (
         <div className="list">
             <h1 className="header">To Do List</h1>
